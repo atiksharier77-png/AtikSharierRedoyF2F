@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efat Art | Video Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <header>
+            <h1>ATIK <span>SHARIER</span></h1>
+            <p>All Video Downloader Pro</p>
+        </header>
+
+        <div class="input-box">
+            <input type="text" id="videoUrl" placeholder="Paste video link here" autocomplete="off">
+            <button onclick="handleDownload()">Download</button>
+        </div>
+
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+            <p>Searching for media...</p>
+        </div>
+
+        <div id="result" class="hidden">
+            <div class="video-info">
+                <img src="https://via.placeholder.com/150" alt="Thumbnail" id="thumb">
+                <h3 id="videoTitle">Video Title Appears Here</h3>
+                <a href="#" id="downloadBtn" class="dl-link" download>Save Video</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
